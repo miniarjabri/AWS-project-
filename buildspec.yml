@@ -7,4 +7,4 @@ phases:
   post_build: 
     commands: 
       - aws s3 cp --recursive ./build s3://myfirstreactapp00/
-      - aws cloudfront create-invalidation --distribution-id E2J1WYQYBZ3Y0J --paths /\* 
+      - aws cloudfront create-invalidation --distribution-id E2MBY28H7XED5H --paths /\* 
