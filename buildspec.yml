@@ -1,0 +1,10 @@
+version : 0.2
+phases: 
+  pre_build:
+    - npm install 
+  build: 
+   - npm run build
+  post_build: 
+    commands: 
+      - aws s3 cp --recursive ./build s3://myfirstreactapp00/
+      - aws cloudfront create-invalidation --distribution-id E2J1WYQYBZ3Y0J --paths /\* 
