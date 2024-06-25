@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-<h1>This is the lastest changes from local !!! - with cloudFront invalidation</h1>
+<h1>!! verify CodePipeline !!</h1>
         </p>
         <a
           className="App-link"
