@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^6.1.12",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aws-amplify": "^6.3.8",
+    "node": "^20.15.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -16,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-"deploy": "aws s3 sync build/ s3://myfirstreactapp00 --profile minyar && aws cloudfront create-invalidation --distribution-id E2MBY28H7XED5H --paths '/*' --profile minyar"
+    "deploy": "aws s3 sync build/ s3://myfirstreactapp00 --profile minyar && aws cloudfront create-invalidation --distribution-id E2MBY28H7XED5H --paths '/*' --profile minyar"
   },
   "eslintConfig": {
     "extends": [
