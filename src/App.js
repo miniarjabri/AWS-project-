@@ -6,6 +6,9 @@ import { Amplify } from 'aws-amplify'; // Correct import
 import awsExports from './aws-exports'; 
 import '@aws-amplify/ui-react/styles.css';
 
+import FileUpload from './uploadFile'; 
+
+
 //Amplify.configure(awsconfig);
 Amplify.configure(awsExports);
 
