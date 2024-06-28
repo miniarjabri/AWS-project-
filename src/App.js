@@ -1,9 +1,13 @@
 import './App.css';
-import awsconfig from './aws-exports';
-import { amplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
-import { Amplify } from 'aws-amplify'; // Correct import
 
-Amplify.configure(awsconfig);
+import awsconfig from './aws-exports';
+import {Authenticator, amplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
+import { Amplify } from 'aws-amplify'; // Correct import
+import awsExports from './aws-exports'; 
+import '@aws-amplify/ui-react/styles.css';
+
+//Amplify.configure(awsconfig);
+Amplify.configure(awsExports);
 
 function App() {
   return (
