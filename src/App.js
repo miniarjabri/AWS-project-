@@ -11,13 +11,27 @@ import FileUpload from './uploadFile';
 
 //Amplify.configure(awsconfig);
 Amplify.configure(awsExports);
-
+/*
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <amplifySignOut /> {/* Use amplifySignOut directly */}
+        <amplifySignOut /> 
         <h2>My app content</h2>
+      </header>
+    </div>
+  );
+}
+
+export default withAuthenticator(App);
+*/
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <AmplifySignOut />
+        <h2>My app content</h2>
+        <FileUpload />
       </header>
     </div>
   );

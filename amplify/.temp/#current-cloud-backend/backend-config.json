@@ -26,29 +26,5 @@
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
     }
-  },
-  "function": {
-    "S3Triggerb359f5ab": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "storage": {
-    "uploadfile": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn",
-            "LambdaExecutionRole"
-          ],
-          "category": "function",
-          "resourceName": "S3Triggerb359f5ab"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "S3"
-    }
   }
 }

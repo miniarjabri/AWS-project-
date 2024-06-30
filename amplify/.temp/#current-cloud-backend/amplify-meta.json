@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-myreactapp-dev-350b7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264416794:role/amplify-myreactapp-dev-350b7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264416794:role/amplify-myreactapp-dev-350b7-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-myreactapp-dev-350b7-deployment",
+      "UnauthRoleName": "amplify-myreactapp-dev-350b7-unauthRole",
+      "StackName": "amplify-myreactapp-dev-350b7",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264416794:stack/amplify-myreactapp-dev-350b7/f7d06780-3308-11ef-a25c-12bf46c9f93d",
+      "AmplifyAppId": "d2w0qwq3w0ct70"
+    }
+  },
+  "auth": {
+    "myreactappd5a5dd88": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-myreactapp-dev-350b7-deployment/amplify-cfn-templates/auth/myreactappd5a5dd88-cloudformation-template.json",
+        "logicalId": "authmyreactappd5a5dd88"
+      },
+      "lastPushTimeStamp": "2024-06-25T15:53:15.256Z",
+      "output": {
+        "UserPoolId": "us-east-1_d6ngWltqk",
+        "AppClientIDWeb": "42aacjhdkpcbahtarn3182am2d",
+        "AppClientID": "5ockj26g4p70obh51n91181opo",
+        "IdentityPoolId": "us-east-1:5a5a1a2b-941a-4d56-a362-2532abf59ed5",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:058264416794:userpool/us-east-1_d6ngWltqk",
+        "IdentityPoolName": "myreactappd5a5dd88_identitypool_d5a5dd88__dev",
+        "UserPoolName": "myreactappd5a5dd88_userpool_d5a5dd88"
+      },
+      "lastPushDirHash": "rAoZd7PDW613zXOxbUOkGYjd3qI="
+    }
+  }
+}
