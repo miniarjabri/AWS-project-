@@ -5,7 +5,7 @@ import {Authenticator, amplifySignOut, withAuthenticator } from '@aws-amplify/ui
 import { Amplify } from 'aws-amplify'; // Correct import
 import awsExports from './aws-exports'; 
 import '@aws-amplify/ui-react/styles.css';
-
+import { Storage } from 'aws-amplify';
 import FileUpload from './uploadFile'; 
 
 
